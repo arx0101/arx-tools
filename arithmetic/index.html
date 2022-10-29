@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/130cd32437.js" crossorigin="anonymous"></script>
+  <title>Arithmetic Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="topnav">
+        <h1 class="logos">ArX Tools</h1>
+        <div class="topmenu">
+          <a onclick="sideBar()"><i class="fas fa-bars"></i></a>
+          <a href="../"><i class="fas fa-home"></i></a>
+          <a onclick="theme()" style="margin-left: auto"><i class="fas fa-adjust"></i></a>
+          <a onclick="searchBar()"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="topnav">
+          <h1 class="logo">ArX Tools</h1>
+          <a class="fas fa-times" onclick="closeSideBar()"></a>
+        </div>
+        
+        <div class="menu">
+          <a href="../aio-web-apps/">AIO Web Apps</a>
+          <a href="">Arithmetic</a>
+          <a href="../color-generator/">Color Generator</a>
+          <a href="../data-size/">Data Size</a>
+          <a href="../encrypt-decrypt/">Encrypt &amp; Decrypt</a>
+          <a href="../numeric/">Numeric Base</a>
+          <a href="../temperature/">Temperature</a>
+          <a href="../trigonometry/">Trigonometry</a>
+        </div>
+      </div>
+      
+      <br>
+      <h1 class="header">Arithmetic Calculator</h1>
+      <input class="search" id="keyword" oninput="searchList();" placeholder="Cari Operasi..." type="text">
+      <div class="layout" id="layout">
+        <div class="addition">
+          <h2>Addition</h2>
+          <input class="first-num" oninput="addition()" placeholder="First number" type="number">
+          <h2><i class="fas fa-plus"></i></h2>
+          <input class="second-num" oninput="addition()" placeholder="Second number" type="number">
+          <h2><i class="fas fa-equals"></i></h2>
+          <input class="result-num" placeholder="Result number" readonly type="number">
+        </div>
+        <br>
+        <div class="substraction">
+          <h2>Substraction</h2>
+          <input class="first-num" oninput="substraction()" placeholder="First number" type="number">
+          <h2><i class="fas fa-minus"></i></h2>
+          <input class="second-num" oninput="substraction()" placeholder="Second number" type="number">
+          <h2><i class="fas fa-equals"></i></h2>
+          <input class="result-num" placeholder="Result number" readonly type="number">
+        </div>
+        <br>
+        <div class="multiplication">
+          <h2>Multiplication</h2>
+          <input class="first-num" oninput="multiplication()" placeholder="First number" type="number">
+          <h2><i class="fas fa-times"></i></h2>
+          <input class="second-num" oninput="multiplication()" placeholder="Second number" type="number">
+          <h2><i class="fas fa-equals"></i></h2>
+          <input class="result-num" placeholder="Result number" readonly type="number">
+        </div>
+        <br>
+        <div class="division">
+          <h2>Division</h2>
+          <input class="first-num" oninput="division()" placeholder="First number" type="number">
+          <h2><i class="fas fa-divide"></i></h2>
+          <input class="second-num" oninput="division()" placeholder="Second number" type="number">
+          <h2><i class="fas fa-equals"></i></h2>
+          <input class="result-num" placeholder="Result number" readonly type="number">
+        </div>
+        <br>
+        <div class="modulus">
+          <h2>Modulus</h2>
+          <input class="first-num" oninput="modulus()" placeholder="First number" type="number">
+          <h2><i class="fas fa-percentage"></i></h2>
+          <input class="second-num" oninput="modulus()" placeholder="Second number" type="number">
+          <h2><i class="fas fa-equals"></i></h2>
+          <input class="result-num" placeholder="Result number" readonly type="number">
+        </div>
+        <br>
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <a href="mailto:aryaps2411@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/aryaps.aryaps.378"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/arx0101"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/arxt2411"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/arxt2411"><i class="fab fa-telegram"></i></a>
+        <a href="https://wa.me/62895339792382"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <b>Copyright <span style="color: white">&copy; ArX0101 2022</span></b>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

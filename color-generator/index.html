@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/130cd32437.js" crossorigin="anonymous"></script>
+  <title>Color Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="topnav">
+        <h1 class="logos">ArX Tools</h1>
+        <div class="topmenu">
+          <a onclick="sideBar()"><i class="fas fa-bars"></i></a>
+          <a href="../"><i class="fas fa-home"></i></a>
+          <a onclick="theme()" style="margin-left: auto"><i class="fas fa-adjust"></i></a>
+          <a><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+      
+      <div class="sidebar">
+        <div class="topnav">
+          <h1 class="logo">ArX Tools</h1>
+          <a class="fas fa-times" onclick="closeSideBar()"></a>
+        </div>
+        <div class="menu">
+          <a href="../aio-web-apps/">AIO Web Apps</a>
+          <a href="../arithmetic/">Arithmetic</a>
+          <a href="">Color Generator</a>
+          <a href="../data-size/">Data Size</a>
+          <a href="../encrypt-decrypt/">Encrypt &amp; Decrypt</a>
+          <a href="../numeric">Numeric Base</a>
+          <a href="../temperature/">Temperature</a>
+          <a href="../trigonometry/">Trigonometry</a>
+        </div>
+      </div>
+      <h1 class="header">Color Generator</h1>
+      <div class="layout" onchange="changeColor()" oninput="changeColor()">
+        <div class="color-box"></div>
+        <div class="color-value">
+          <h3 class="rgb-color">RGB Color Value: rgb(0, 0, 0)</h3>
+          <h3 class="hex-color">HEX Color Value: #000000</h3>
+          <h3 class="vec3-color">vec3 Color Value: vec3(0.0, 0.0, 0.0)</h3>
+        </div>
+        <input class="range-red" max="255" min="0" oninput="rangeRed(this.value)" type="range" value="0">
+        <div class="input-box">
+          <label for="red">Red: </label>
+          <input class="input-red" id="red" max="255" min="0" oninput="inputRed(this.value)" type="number" value="0">
+        </div>
+        <input class="range-green" max="255" min="0" oninput="rangeGreen(this.value)" type="range" value="0">
+        <div class="input-box">
+          <label for="green">Green: </label>
+          <input class="input-green" id="green" max="255" min="0" oninput="inputGreen(this.value)" type="number" value="0">
+        </div>
+        <input class="range-blue" max="255" min="0" oninput="rangeBlue(this.value)" type="range" value="0">
+        <div class="input-box">
+          <label for="blue">Blue: </label>
+          <input class="input-blue" id="blue" max="255" min="0" oninput="inputBlue(this.value)" type="number" value="0">
+        </div>
+      </div>
+      <br>
+      <h1 class="header">Gradient Generator</h1>
+      <div class="layout" onchange="changeGradient()" oninput="changeGradient()">
+        <div class="gradient-box"></div>
+        <div class="select">
+          <label>Gradient Direction: </label>
+          <select class="option">
+            <option value="to bottom">To Bottom</option>
+            <option value="to top">To Top</option>
+            <option value="to left">To Left</option>
+            <option value="to right">To Right</option>
+            <option value="to bottom left">To Bottom Left</option>
+            <option value="to bottom right">To Bottom Right</option>
+            <option value="to top left">To Top Left</option>
+            <option value="to top right">To Top Right</option>
+          </select>
+        </div>
+        <h3 class="gradient-code-rgb">HTML Code (RGB): linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255))</h3>
+        <h3 class="gradient-code-hex">HTML Code (HEX): linear-gradient(to bottom, #000000, #FFFFFF)</h3>
+        <div class="container-box">
+          <div class="first-color">
+            <h3>First Color</h3>
+            <input class="first-range-red" max="255" min="0" oninput="firstRangeRed(this.value)" type="range" value="0">
+            <div class="input-box">
+              <label for="first-red">Red: </label>
+              <input class="first-input-red" id="first-red" max="255" min="0" oninput="firstInputRed(this.value)" type="number" value="0">
+            </div>
+            <input class="first-range-green" max="255" min="0" oninput="firstRangeGreen(this.value)" type="range" value="0">
+            <div class="input-box">
+              <label for="first-green">Green: </label>
+              <input class="first-input-green" id="first-green" max="255" min="0" oninput="firstInputGreen(this.value)" type="number" value="0">
+            </div>
+            <input class="first-range-blue" max="255" min="0" oninput="firstRangeBlue(this.value)" type="range" value="0">
+            <div class="input-box">
+              <label for="first-blue">Blue: </label>
+              <input class="first-input-blue" id="first-blue" max="255" min="0" oninput="firstInputBlue(this.value)" type="number" value="0">
+            </div>
+          </div>
+          
+          <div class="second-color">
+            <h3>Second Color</h3>
+            <input class="second-range-red" max="255" min="0" oninput="secondRangeRed(this.value)" type="range" value="255">
+            <div class="input-box">
+              <label for="second-red">Red: </label>
+              <input class="second-input-red" id="second-red" max="255" min="0" oninput="secondInputRed(this.value)" type="number" value="255">
+            </div>
+            <input class="second-range-green" max="255" min="0" oninput="secondRangeGreen(this.value)" type="range" value="255">
+            <div class="input-box">
+              <label for="second-green">Green: </label>
+              <input class="second-input-green" id="second-green" max="255" min="0" oninput="secondInputGreen(this.value)" type="number" value="255">
+            </div>
+            <input class="second-range-blue" max="255" min="0" oninput="secondRangeBlue(this.value)" type="range" value="255">
+            <div class="input-box">
+              <label for="second-blue">Blue: </label>
+              <input class="second-input-blue" id="second-blue" max="255" min="0" oninput="secondInputBlue(this.value)" type="number" value="255">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <a href="mailto:aryaps2411@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/aryaps.aryaps.378"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/arx0101"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/arxt2411"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/arxt2411"><i class="fab fa-telegram"></i></a>
+        <a href="https://wa.me/62895339792382"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <b>Copyright <span style="color: white">&copy; ArX0101 2022</span></b>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

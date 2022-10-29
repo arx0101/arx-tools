@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/130cd32437.js" crossorigin="anonymous"></script>
+  <title>All In One Web Applications</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="topnav">
+        <h1 class="logos">ArX Tools</h1>
+        <div class="topmenu">
+          <a onclick="sideBar()"><i class="fas fa-bars"></i></a>
+          <a href="../"><i class="fas fa-home"></i></a>
+          <a onclick="theme()" style="margin-left: auto"><i class="fas fa-adjust"></i></a>
+          <a onclick="searchBar()"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="topnav">
+          <h1 class="logo">ArX Tools</h1>
+          <a class="fas fa-times" onclick="closeSideBar()"></a>
+        </div>
+        
+        <div class="menu">
+          <a href="">AIO Web Apps</a>
+          <a href="../arithmetic">Arithmetic</a>
+          <a href="../color-generator/">Color Generator</a>
+          <a href="../data-size/">Data Size</a>
+          <a href="../encrypt-decrypt/">Encrypt &amp; Decrypt</a>
+          <a href="../numeric">Numeric Base</a>
+          <a href="../temperature/">Temperature</a>
+          <a href="../trigonometry/">Trigonometry</a>
+        </div>
+      </div>
+      <br>
+      <h1 class="header">All In One Web Applications</h1>
+      <input class="search" id="keyword" oninput="searchList();" placeholder="Cari Aplikasi..." type="text">
+      <div class="layout" id="layout">
+        <div onclick="link('https://www.amazon.com/')">
+          <img src="icon/amazon.jpg">
+          <br><span>Amazon</span>
+        </div>
+    
+        <div onclick="link('https://www.aliexpress.com/')">
+          <img src="icon/aliexpress.jpg">
+          <br><span>AliExpress</span>
+        </div>
+    
+        <div onclick="link('https://www.banggood.com/')">
+          <img src="icon/banggood.jpg">
+          <br><span>Banggood</span>
+        </div>
+    
+        <div onclick="link('https://www.blibli.com/')">
+          <img src="icon/blibli.jpg">
+          <br><span>Blibli</span>
+        </div>
+    
+        <div onclick="link('https://www.blogger.com/')">
+          <img src="icon/blogger.jpg">
+          <br><span>Blogger</span>
+        </div>
+    
+        <div onclick="link('https://www.brainly.co.id/')">
+          <img src="icon/brainly.jpg">
+          <br><span>Brainly</span>
+        </div>
+    
+        <div onclick="link('https://www.bilibili.tv/')">
+          <img src="icon/bstation.jpg">
+          <br><span>Bstation</span>
+        </div>
+    
+        <div onclick="link('https://www.bukalapak.com/')">
+          <img src="icon/bukalapak.jpg">
+          <br><span>Bukalapak</span>
+        </div>
+        
+        <div onclick="link('https://www.canva.com/')">
+          <img src="icon/canva.jpg">
+          <br><span>Canva</span>
+        </div>
+    
+        <div onclick="link('https://www.classroom.google.com/')">
+          <img src="icon/classroom.jpg">
+          <br><span>Classroom</span>
+        </div>
+    
+        <div onclick="link('https://www.codashop.com/')">
+          <img src="icon/codashop.jpg">
+          <br><span>Codashop</span>
+        </div>
+    
+        <div onclick="link('https://www.coursehero.com/')">
+          <img src="icon/course.jpg">
+          <br><span>Course</span>
+        </div>
+    
+        <div onclick="link('https://www.discord.com/')">
+          <img src="icon/discord.jpg">
+          <br><span>Discord</span>
+        </div>
+    
+        <div onclick="link('https://www.dropbox.com/')">
+          <img src="icon/dropbox.jpg">
+          <br><span>DropBox</span>
+        </div>
+    
+        <div onclick="link('https://www.ebay.com/')">
+          <img src="icon/ebay.jpg">
+          <br><span>eBay</span>
+        </div>
+    
+        <div onclick="link('https://www.disneyplus.com/')">
+          <img src="icon/hotstar.jpg">
+          <br><span>Disney+</span>
+        </div>
+    
+        <div onclick="link('https://www.facebook.com/')">
+          <img src="icon/facebook.jpg">
+          <br><span>Facebook</span>
+        </div>
+    
+        <div onclick="link('https://www.gearbest.com/')">
+          <img src="icon/gearbest.jpg">
+          <br><span>Gearbest</span>
+        </div>
+        
+        <div onclick="link('https://www.geeksforgeeks.org/')">
+          <img src="icon/gfg.jpg">
+          <br><span>Geeksfor...</span>
+        </div>
+    
+        <div onclick="link('https://www.github.com/')">
+          <img src="icon/github.jpg">
+          <br><span>GitHub</span>
+        </div>
+    
+        <div onclick="link('https://www.gmail.com/')">
+          <img src="icon/gmail.jpg">
+          <br><span>Gmail</span>
+        </div>
+    
+        <div onclick="link('https://www.google.com/')">
+          <img src="icon/google.jpg">
+          <br><span>Google</span>
+        </div>
+    
+        <div onclick="link('https://drive.google.com/')">
+          <img src="icon/drive.jpg">
+          <br><span>Drive</span>
+        </div>
+    
+        <div onclick="link('https://earth.google.com/')">
+          <img src="icon/earth.jpg">
+          <br><span>Earth</span>
+        </div>
+    
+        <div onclick="link('https://maps.google.com/')">
+          <img src="icon/maps.jpg">
+          <br><span>Maps</span>
+        </div>
+    
+        <div onclick="link('https://meet.google.com/')">
+          <img src="icon/meet.jpg">
+          <br><span>Meet</span>
+        </div>
+    
+        <div onclick="link('https://one.google.com/')">
+          <img src="icon/googleone.jpg">
+          <br><span>One</span>
+        </div>
+    
+        <div onclick="link('https://www.gojek.com/')">
+          <img src="icon/gojek.jpg">
+          <br><span>Gojek</span>
+        </div>
+    
+        <div onclick="link('https://www.grab.com/')">
+          <img src="icon/grab.jpg">
+          <br><span>Grab</span>
+        </div>
+    
+        <div onclick="link('https://www.iflix.com/')">
+          <img src="icon/iflix.jpg">
+          <br><span>iflix</span>
+        </div>
+    
+        <div onclick="link('https://www.instagram.com/')">
+          <img src="icon/instagram.jpg">
+          <br><span>Instagram</span>
+        </div>
+    
+        <div onclick="link('https://www.iqiyi.com/')">
+          <img src="icon/iqiyi.jpg">
+          <br><span>iQIYI</span>
+        </div>
+    
+        <div onclick="link('https://www.itemku.com/')">
+          <img src="icon/itemku.jpg">
+          <br><span>Itemku</span>
+        </div>
+    
+        <div onclick="link('https://www.jd.id/')">
+          <img src="icon/jdid.jpg">
+          <br><span>JD.ID</span>
+        </div>
+    
+        <div onclick="link('https://www.joox.com/')">
+          <img src="icon/joox.jpg">
+          <br><span>JOOX</span>
+        </div>
+    
+        <div onclick="link('https://www.lazada.com/')">
+          <img src="icon/lazada.jpg">
+          <br><span>Lazada</span>
+        </div>
+    
+        <div onclick="link('https://www.linkedin.com/')">
+          <img src="icon/linkedin.jpg">
+          <br><span>LinkedIn</span>
+        </div>
+    
+        <div onclick="link('https://maxstream.tv/')">
+          <img src="icon/maxstream.jpg">
+          <br><span>MAXStream</span>
+        </div>
+    
+        <div onclick="link('https://www.mediafire.com/')">
+          <img src="icon/mediafire.jpg">
+          <br><span>MediaFire</span>
+        </div>
+    
+        <div onclick="link('https://www.mega.com/')">
+          <img src="icon/mega.jpg">
+          <br><span>MEGA</span>
+        </div>
+    
+        <div onclick="link('https://www.office.com/')">
+          <img src="icon/office.jpg">
+          <br><span>Office</span>
+        </div>
+    
+        <div onclick="link('https://www.netflix.com/')">
+          <img src="icon/netflix.jpg">
+          <br><span>Netflix</span>
+        </div>
+    
+        <div onclick="link('https://www.nimo.tv/')">
+          <img src="icon/nimo.jpg">
+          <br><span>Nimo TV</span>
+        </div>
+    
+        <div onclick="link('https://omlet.gg/')">
+          <img src="icon/omlet.jpg">
+          <br><span>Omlet</span>
+        </div>
+    
+        <div onclick="link('https://www.onedrive.com/')">
+          <img src="icon/onedrive.jpg">
+          <br><span>OneDrive</span>
+        </div>
+    
+        <div onclick="link('https://www.paypal.com/')">
+          <img src="icon/paypal.jpg">
+          <br><span>PayPal</span>
+        </div>
+    
+        <div onclick="link('https://www.pinterest.com/')">
+          <img src="icon/pinterest.jpg">
+          <br><span>Pinterest</span>
+        </div>
+    
+        <div onclick="link('https://photoeditor.polarr.com/')">
+          <img src="icon/polarr.jpg">
+          <br><span>Polarr</span>
+        </div>
+    
+        <div onclick="link('https://www.quora.com/')">
+          <img src="icon/quora.jpg">
+          <br><span>Quora</span>
+        </div>
+    
+        <div onclick="link('https://www.reddit.com/')">
+          <img src="icon/reddit.jpg">
+          <br><span>Reddit</span>
+        </div>
+    
+        <div onclick="link('https://www.shazam.com/')">
+          <img src="icon/shazam.jpg">
+          <br><span>Shazam</span>
+        </div>
+    
+        <div onclick="link('https://www.shopee.com/')">
+          <img src="icon/shopee.jpg">
+          <br><span>Shopee</span>
+        </div>
+    
+        <div onclick="link('https://www.simplilearn.com/')">
+          <img src="icon/simplilearn.jpg">
+          <br><span>Simplilearn</span>
+        </div>
+    
+        <div onclick="link('https://www.soundcloud.com/')">
+          <img src="icon/soundcloud.jpg">
+          <br><span>SoundC...</span>
+        </div>
+    
+        <div onclick="link('https://www.snapchat.com/')">
+          <img src="icon/snapchat.jpg">
+          <br><span>Snapchat</span>
+        </div>
+    
+        <div onclick="link('https://open.spotify.com/')">
+          <img src="icon/spotify.jpg">
+          <br><span>Spotify</span>
+        </div>
+        
+        <div onclick="link('https://stackoverflow.com/')">
+          <img src="icon/stackoverflow.jpg">
+          <br><span>Stackover...</span>
+        </div>
+        
+        <div onclick="link('https://web.telegram.org/')">
+          <img src="icon/telegram.jpg">
+          <br><span>Telegram</span>
+        </div>
+    
+        <div onclick="link('https://www.tiktok.com/')">
+          <img src="icon/tiktok.jpg">
+          <br><span>Tiktok</span>
+        </div>
+    
+        <div onclick="link('https://www.tinder.com/')">
+          <img src="icon/tinder.jpg">
+          <br><span>Tinder</span>
+        </div>
+    
+        <div onclick="link('https://www.tokopedia.com/')">
+          <img src="icon/tokopedia.jpg">
+          <br><span>Tokopedia</span>
+        </div>
+    
+        <div onclick="link('https://translate.google.com/')">
+          <img src="icon/translate.jpg">
+          <br><span>Translate</span>
+        </div>
+    
+        <div onclick="link('https://www.tumblr.com/')">
+          <img src="icon/tumblr.jpg">
+          <br><span>Tumblr</span>
+        </div>
+    
+        <div onclick="link('https://www.twitch.tv/')">
+          <img src="icon/twitch.jpg">
+          <br><span>Twitch</span>
+        </div>
+    
+        <div onclick="link('https://www.twitter.com/')">
+          <img src="icon/twitter.jpg">
+          <br><span>Twitter</span>
+        </div>
+    
+        <div onclick="link('https://www.unipin.com/')">
+          <img src="icon/unipin.jpg">
+          <br><span>Unipin</span>
+        </div>
+    
+        <div onclick="link('https://www.vidio.com/')">
+          <img src="icon/vidio.jpg">
+          <br><span>Vidio</span>
+        </div>
+    
+        <div onclick="link('https://www.viu.com/')">
+          <img src="icon/viu.jpg">
+          <br><span>Viu</span>
+        </div>
+        
+        <div onclick="link('https://www.vk.com/')">
+          <img src="icon/vk.jpg">
+          <br><span>Vk</span>
+        </div>
+    
+        <div onclick="link('https://www.wattpad.com/')">
+          <img src="icon/wattpad.jpg">
+          <br><span>Wattpad</span>
+        </div>
+    
+        <div onclick="link('https://www.webtoon.com/')">
+          <img src="icon/webtoon.jpg">
+          <br><span>WEBTOON</span>
+        </div>
+    
+        <div onclick="link('https://www.wetv.vip/')">
+          <img src="icon/wetv.jpg">
+          <br><span>WeTV</span>
+        </div>
+    
+        <div onclick="link('https://web.whatsapp.com/')">
+          <img src="icon/whatsapp.jpg">
+          <br><span>WhatsWeb</span>
+        </div>
+    
+        <div onclick="link('https://www.wikipedia.org/')">
+          <img src="icon/wikipedia.jpg">
+          <br><span>Wikipedia</span>
+        </div>
+    
+        <div onclick="link('https://wordpress.com/')">
+          <img src="icon/wordpress.jpg">
+          <br><span>WordPress</span>
+        </div>
+    
+        <div onclick="link('https://www.xda-developers.com/')">
+          <img src="icon/xda.jpg">
+          <br><span>XDA</span>
+        </div>
+    
+        <div onclick="link('https://yandex.com/')">
+          <img src="icon/yandex.jpg">
+          <br><span>Yandex</span>
+        </div>
+    
+        <div onclick="link('https://www.youtube.com')">
+          <img src="icon/youtube.jpg">
+          <br><span>YouTube</span>
+        </div>
+    
+        <div onclick="link('https://studio.youtube.com/')">
+          <img src="icon/ytstudio.jpg">
+          <br><span>Studio</span>
+        </div>
+    
+        <div onclick="link('https://zoom.us/')">
+          <img src="icon/zoom.jpg">
+          <br><span>Zoom</span>
+        </div>
+        <br>
+      </div>
+    </div>
+    
+    <footer>
+      <div>
+        <a href="mailto:aryaps2411@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/aryaps.aryaps.378"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/arx0101"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/arxt2411"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/arxt2411"><i class="fab fa-telegram"></i></a>
+        <a href="https://wa.me/62895339792382"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <b>Copyright <span style="color: white">&copy; ArX0101 2022</span></b>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
